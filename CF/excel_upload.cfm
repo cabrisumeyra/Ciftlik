@@ -1,12 +1,6 @@
-<cfparam name="form.FileName" default="">
-<cfset FileName = form.FileName>
-
 <cffile action = "upload" fileField = "file_11" destination = "#expandPath("ExcellDosyalar")#"  nameConflict = "Overwrite" result="resul"> 	
-
-
-<cfspreadsheet action="read" src="#expandPath("ExcellDosyalar/excelim.xls")#" name="sheet" >
-
-
+<cfoutput>Dosya_Adi: #resul.ServerFile#</cfoutput>
+<cfspreadsheet action="read" src="#expandPath("ExcellDosyalar/#resul.ServerFile#")#" name="sheet" >
 
 <cfoutput>
 
@@ -35,13 +29,4 @@
 
 
 
-
-
-<script>
-    $('#file_11').change(function(e){
-        var fileName = e. target. files[0]. name;
-        $("#FileName").val(fileName)
-    });
-
-</script>
 
