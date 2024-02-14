@@ -1,0 +1,1 @@
+Hamza Beyin çiftliğinde tavukları, inekleri ve köpekleri var. Hamza Bey hayvanlarını kaydetmek, veteriner muayenelerini takip etmek, günlük yem harcamalarını ve süt üretimini takip etmek üzere bir yazılım yaptırmak istemektedir.
